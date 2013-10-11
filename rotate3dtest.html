@@ -7,28 +7,35 @@
 	#container {
 		width: 500px;
 		height: 300px;
+		padding: 0;
 		margin: 200px auto;
 		text-align: center;
-		-webkit-perspective: 1024px;
-		-moz-perspective: 1024px;
-		-ms-perspective: 1024px;
-		-sand-perspective: 1024px;
-		perspective: 1024px;
+		-webkit-perspective: 500px;
+		-moz-perspective: 500px;
+		-ms-perspective: 500px;
+		perspective: 500px;
+		-webkit-transform-origin: 50% 50% 50%;
+		-moz-transform-origin: 50% 50% 50%;
+		-ms-transform-origin: 50% 50% 50%;
+		transform-origin: 50% 50% 50%;
 	}
 	.wall {
 		position: absolute;
 		background: #efefef;
+		border: 1px solid #ccc;
 		width: 500px;
 		height: 300px;
-		table-layout: table-cell;
-		transform-origin: 50% 0px;
-		-webkit-transform-origin: 50% 0px;
 		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
 		transition: all 0.5s ease;
 		-webkit-transform: translateZ(-250px) rotateX(0deg);
 		-moz-transform: translateZ(-250px) rotateX(0deg);
 		-ms-transform: translateZ(-250px) rotateX(0deg);
 		transform: translateZ(-250px) rotateX(0deg);
+	}
+	.wall img {
+		height: 100%;
 	}
 	.wall.west {
 		-webkit-transform: translateX(-250px) rotateY(90deg);
